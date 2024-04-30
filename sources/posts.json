@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "adasdasdasd123123",
+    "content": "asdasdsa",
+    "tags": ["lorem", "ipsum"],
+    "imgUrl": "asdasda",
+    "authorId": "asdas23123",
+    "comments": [
+      {
+        "content": "bagus gan postingannya",
+        "username": "dhimas",
+        "createdAt": "",
+        "updatedAt": ""
+      },
+      {
+        "content": "bagus gan postingannya 2",
+        "username": "dhimas",
+        "createdAt": "",
+        "updatedAt": ""
+      }
+    ],
+    "likes": [
+      {
+        "username": "udin",
+        "createdAt": "",
+        "updatedAt": ""
+      },
+      {
+        "username": "jamal",
+        "createdAt": "",
+        "updatedAt": ""
+      }
+    ],
+    "createdAt": "",
+    "updatedAt": ""
+  }
+]
