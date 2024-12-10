@@ -1,5 +1,5 @@
-const { ObjectId } = require("mongodb");
-const { DB } = require("../config/db");
+import { ObjectId } from "mongodb";
+import { DB } from "../config/db.js";
 
 // biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 class Book {
@@ -59,4 +59,4 @@ class Book {
 	}
 }
 
-module.exports = Book;
+export default Book;

@@ -1,14 +1,11 @@
-if (process.env !== "production") {
-	require("dotenv").config();
-}
-const { ApolloServer } = require("@apollo/server");
-const { startStandaloneServer } = require("@apollo/server/standalone");
-const { typeDefs, resolvers } = require("./schema/bookSchema");
+import { ApolloServer } from "@apollo/server";
+import { startStandaloneServer } from "@apollo/server/standalone";
+import { resolvers, typeDefs } from "./schema/bookSchema.js";
 
-const {
-	typeDefs: typeDefOrder,
-	resolvers: resolverOrder,
-} = require("./schema/orderSchema");
+import {
+	resolvers as resolverOrder,
+	typeDefs as typeDefOrder,
+} from "./schema/orderSchema.js";
 
 const server = new ApolloServer({
 	typeDefs: [typeDefs, typeDefOrder],

@@ -1,7 +1,7 @@
-const { client } = require("../config/db");
-const Book = require("../models/Book");
-const Order = require("../models/Order");
-const { GraphQLError } = require("graphql");
+import { GraphQLError } from "graphql";
+import { client } from "../config/db.js";
+import Book from "../models/Book.js";
+import Order from "../models/Order.js";
 
 const typeDefs = `#graphql
   type Order {
@@ -122,7 +122,4 @@ const resolvers = {
 	},
 };
 
-module.exports = {
-	typeDefs,
-	resolvers,
-};
+export { typeDefs, resolvers };

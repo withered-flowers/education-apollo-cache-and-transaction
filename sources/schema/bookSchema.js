@@ -1,5 +1,5 @@
-const redis = require("../config/redis");
-const Book = require("../models/Book");
+import redis from "../config/redis.js";
+import Book from "../models/Book.js";
 
 const DATA_BOOKS = [
 	{
@@ -84,7 +84,4 @@ const resolvers = {
 	},
 };
 
-module.exports = {
-	typeDefs,
-	resolvers,
-};
+export { typeDefs, resolvers };

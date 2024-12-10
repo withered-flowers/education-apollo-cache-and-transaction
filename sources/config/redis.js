@@ -1,4 +1,4 @@
-const Redis = require("ioredis");
+import Redis from "ioredis";
 
 // ? default: localhost:6379
 // ? Bila ingin tembak ke connection remote
@@ -14,4 +14,4 @@ const Redis = require("ioredis");
  */
 const redis = new Redis();
 
-module.exports = redis;
+export default redis;

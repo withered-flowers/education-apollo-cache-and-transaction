@@ -70,7 +70,4 @@ const resolvers = {
 	},
 };
 
-module.exports = {
-	typeDefs,
-	resolvers,
-};
+export { typeDefs, resolvers };

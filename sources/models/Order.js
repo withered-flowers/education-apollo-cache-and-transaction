@@ -1,5 +1,5 @@
-const { ObjectId } = require("mongodb");
-const { DB } = require("../config/db");
+import { ObjectId } from "mongodb";
+import { DB } from "../config/db.js";
 
 // biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 class Order {
@@ -58,4 +58,4 @@ class Order {
 	}
 }
 
-module.exports = Order;
+export default Order;
